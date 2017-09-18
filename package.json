@@ -1,0 +1,57 @@
+{
+  "name": "@towercg/dashboard",
+  "version": "0.0.0",
+  "main": "dist",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "build": "npx babel src -d dist",
+    "watch": "yarn build --watch",
+    "test": "npx jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.1.0"
+  },
+  "dependencies": {
+    "@towercg/client": "^0.0.0",
+    "auto-bind": "^1.1.0",
+    "babel-runtime": "^6.26.0",
+    "better-react-spinkit": "^2.0.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "reactstrap": "^4.8.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "transform-class-properties",
+        {
+          "spec": true
+        }
+      ],
+      [
+        "transform-runtime",
+        {
+          "polyfill": false,
+          "regenerator": true
+        }
+      ],
+      "transform-react-jsx"
+    ]
+  }
+}
