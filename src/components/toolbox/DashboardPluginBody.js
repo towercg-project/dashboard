@@ -9,7 +9,8 @@ import {
   Card,
 
   CardHeader,
-  CardBlock
+  CardBlock,
+  CardFooter
 } from 'reactstrap';
 
 export class DashboardPluginBody extends React.Component {
@@ -27,15 +28,16 @@ export class DashboardPluginBody extends React.Component {
 
   render() {
     return (
-      <Col xs={this.props.xs} sm={this.props.sm} md={this.props.md} lg={this.props.lg}>
+      <Col xs={this.props.xs} sm={this.props.sm} md={this.props.md} lg={this.props.lg} style={{ marginBottom: '2rem' }}>
         <Card>
           <CardHeader>
             <a href="#" onClick={this._toggleCollapse}>{this.props.title}</a>
           </CardHeader>
           <Collapse isOpen={this.state.open}>
-            <CardBlock>
+            <div>
               {this.props.children}
-            </CardBlock>
+              <CardFooter />
+            </div>
           </Collapse>
         </Card>
       </Col>

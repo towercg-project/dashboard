@@ -46,7 +46,7 @@ export default class Page extends React.Component {
     return (
       <div>
         <TopBar />
-        <div>
+        <div style={{ marginLeft: '1rem', marginRight: '1rem' }}>
           <Nav tabs>
             {
               Object.keys(tabs).map((tabName) => {
