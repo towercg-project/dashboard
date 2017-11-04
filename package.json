@@ -19,7 +19,7 @@
     "jest": "^21.1.0"
   },
   "dependencies": {
-    "@towercg/client": "^0.0.0",
+    "@towercg/client": "^0.0.1",
     "auto-bind": "^1.1.0",
     "babel-runtime": "^6.26.0",
     "better-react-spinkit": "^2.0.0",
